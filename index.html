@@ -169,25 +169,31 @@ footer p{margin:8px 0 0}
         <div class="card"><div class="no">2</div><h3>「次の卓」がひと目で分かる</h3>
           <p>実施日が近いシナリオを、残り日数と準備の進み具合つきで表示。複数の日程も登録できます。</p></div>
         <div class="card"><div class="no">3</div><h3>PDF・Wordの本文を取り込み</h3>
-          <p>ドラッグ＆ドロップで本文を取り込み。見出しを見つけて目次にします。テキストの貼り付けにも対応。</p></div>
+          <p>PDF・Word・HTML・テキストを、ドラッグ＆ドロップで取り込み。見出しを見つけて目次にします。2段組みのPDFにも対応しました。</p></div>
         <div class="card"><div class="no">4</div><h3>読んだところが分かる</h3>
           <p>ボイス用は段落ごとに読了チェック。テキスト用は、段落をクリックするとコピーされるので、貼り付けが楽です。</p></div>
         <div class="card"><div class="no">5</div><h3>読みやすく編集できる</h3>
           <p>メモ枠・コピーボックス・見出しリンク・ルビ・画像・区切り線。自動書式や一括置換で、整える手間も減らせます。</p></div>
         <div class="card"><div class="no">6</div><h3>うっかりを防ぐチェック</h3>
-          <p>取り込みで欠けた文章をハイライトでお知らせ。SAN値などの減少値の合計計算も、ワンボタンです。</p></div>
+          <p>取り込みで欠けた文章をハイライトでお知らせ。SAN値などの減少値の合計計算（減少計算）も、ワンボタンです。</p></div>
         <div class="card"><div class="no">7</div><h3>ボイセ・テキセの時間換算</h3>
           <p>プレイ時間の表示と計算を、ボイセ／テキセで切り替え。換算の比率も変えられます。</p></div>
         <div class="card"><div class="no">8</div><h3>CPごとの管理</h3>
           <p>CPの名前と、2人分のアイコン（絵文字や画像）を登録。カードに表示され、絞り込みにも使えます。</p></div>
         <div class="card"><div class="no">9</div><h3>データは手元に、バックアップも簡単</h3>
           <p>データはパソコンの中だけ。1ファイルの全データバックアップで、引っ越しも復元もできます。</p></div>
+        <div class="card"><div class="no">10</div><h3>難読漢字に、自動でルビ <span class="tag">NEW</span></h3>
+          <p>取り込むときに、読みにくい言葉へ自動でルビを振れます。自分で振ったルビは辞書に覚えるので、次からも使えます。</p></div>
+        <div class="card"><div class="no">11</div><h3>変数で、名前を一括置き換え <span class="tag">NEW</span></h3>
+          <p>本文に {名前} と書いておくと、閲覧モードでシナリオごとの言葉に置き換えて表示・コピー。卓ごとの差し替えが楽になります。</p></div>
+        <div class="card"><div class="no">12</div><h3>取り込みがさらに賢く <span class="tag">NEW</span></h3>
+          <p>HTMLファイルに対応。ルビ付きのPDFや、Pagesなどで書き出したPDFも、崩れず読み込めるようになりました。</p></div>
       </div>
 
       <div class="videos">
         <div class="vbox wide">
-          <div class="ratio"><iframe src="https://www.youtube.com/embed/Xl_JYOo4Z1U" title="解説動画" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
-          <p>解説動画<small>使い方をじっくり知りたい方へ</small></p>
+          <div class="ratio"><iframe src="https://www.youtube.com/embed/277h4phTrdI" title="解説動画" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+          <p>基本の解説動画<small>使い方をじっくり知りたい方へ</small></p>
         </div>
         <div class="vbox short">
           <div class="ratio"><iframe src="https://www.youtube.com/embed/lqX9sLYFfVI" title="ショート動画" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
@@ -256,6 +262,26 @@ footer p{margin:8px 0 0}
       <p class="sub">新しい版が上です。</p>
       <div class="hist">
         <details open>
+          <summary>ver1.0.3 <small>2026.10.14</small></summary>
+          <ul>
+            <li>PDF・Word・HTML・テキストの取り込み時に、難読漢字へ自動でルビを振る機能を追加（振るかどうかは、毎回確認します）</li>
+            <li>「ルビ辞書」を追加。ルビを振る言葉の確認・振らない設定・追加ができます</li>
+            <li>自分で振ったルビを、自動で辞書に覚えるように追加。覚えたルビの書き出し・読み込みにも対応（PCの引っ越し用）</li>
+            <li>HTMLファイル（.html／.htm）の取り込みに対応</li>
+            <li>変数機能を追加。本文の {名前} を、閲覧モードでシナリオごとの言葉に置き換えて表示・コピーできます</li>
+            <li>PDFの取り込みで、2段組みのシナリオを、左の段→右の段の順に読み込むように修正</li>
+            <li>PDFの取り込みで、ルビのあるシナリオが崩れる不具合を修正</li>
+            <li>Pagesなどで書き出した日本語フォントのPDFが、「文字を取り出せませんでした」と出て読み込めない不具合を修正</li>
+            <li>見出しにルビがあるとき、目次・見出しリンクの一覧にルビの読みが混ざらないように修正</li>
+            <li>本文のないシートにPDF・Wordを読み込むとき、「再読み込みしますか？」の確認が出ないように修正</li>
+            <li>ルビの確認画面に、「ルビ辞書を開く」ボタンを追加</li>
+            <li>表記変更：「SAN計算」を「減少計算」に変更</li>
+            <li>自動書式（行頭ルール）が反応しない場合があるのを修正</li>
+            <li>テキストの取り込みで、改ページ文字が行頭に残って、自動書式が効かなくなる不具合を修正</li>
+            <li>本文がまだ入っていないシートに、取り込み方法の説明を表示</li>
+          </ul>
+        </details>
+        <details>
           <summary>ver1.0.2 <small>2026.10.08</small></summary>
           <ul>
             <li>シート（タブ）を、右クリック・長押しで複製できるように追加</li>
@@ -308,7 +334,7 @@ footer p{margin:8px 0 0}
     <div>
       <a href="https://utiyoso-uy.booth.pm/" target="_blank" rel="noopener">BOOTH</a>
       <a href="https://x.com/utiyoso_uy" target="_blank" rel="noopener">X @utiyoso_uy</a>
-      <a href="https://youtu.be/Xl_JYOo4Z1U" target="_blank" rel="noopener">解説動画</a>
+      <a href="https://youtu.be/277h4phTrdI" target="_blank" rel="noopener">解説動画</a>
       <a href="https://mond.how/utiyoso_uy?lang=ja" target="_blank" rel="noopener">バグ報告・お問い合わせ</a>
     </div>
     <p>© うちよそ研究所</p>
