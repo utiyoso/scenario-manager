@@ -117,6 +117,17 @@ summary small{color:var(--muted);font-weight:400;font-size:13px}
 details ul{margin:0;padding:14px 20px 16px 38px;font-size:14.5px;color:var(--ink)}
 details li{margin-bottom:5px}
 
+
+/* terms */
+.terms{max-width:760px;margin:22px auto 0;text-align:left;background:#fff;border:2px solid var(--line);border-radius:var(--radius)}
+.terms summary{justify-content:center;font-size:14px;color:var(--ink)}
+.terms-body{padding:6px 24px 22px;font-size:13.5px;line-height:1.8;color:var(--ink);max-height:420px;overflow:auto}
+.terms-body h3{font-size:16px;margin:14px 0 8px}
+.terms-body h4{font-size:14px;margin:16px 0 2px;color:var(--pink-deep)}
+.terms-body p,.terms-body ol{margin:2px 0}
+.terms-body ol{padding-left:1.6em}
+.terms-body .date{margin-top:18px;text-align:right;color:var(--muted)}
+
 /* footer */
 footer{background:var(--pink-soft);text-align:center;padding:34px 0 40px;font-size:14px;color:var(--muted)}
 footer a{margin:0 8px;font-weight:700}
@@ -357,8 +368,45 @@ footer p{margin:8px 0 0}
       <a href="https://x.com/utiyoso_uy" target="_blank" rel="noopener">X @utiyoso_uy</a>
       <a href="https://youtu.be/PHZxe9jPgyg" target="_blank" rel="noopener">解説動画</a>
       <a href="https://utiyoso.github.io/" target="_blank" rel="noopener">他ツール一覧</a>
+      <a href="#terms" onclick="document.getElementById('terms').open=true">利用規約</a>
       <a href="https://mond.how/utiyoso_uy?lang=ja" target="_blank" rel="noopener">バグ報告・お問い合わせ</a>
     </div>
+    <details class="terms" id="terms">
+      <summary>利用規約</summary>
+      <div class="terms-body">
+        <h3>scenario_manager（うちよそ研究所）利用規約</h3>
+        <p>この規約は、うちよそ研究所（以下「作者」）が提供するソフトウェア「scenario_manager」（体験版を含みます。以下「本ソフト」）の利用条件です。本ソフトを使った時点で、この規約に同意したものとみなします。同意できない場合は、本ソフトを使わないでください。</p>
+        <h4>第1条（現状のまま提供します）</h4>
+        <p>本ソフトは、現状のまま提供します。動作の正しさ、特定の目的への適合、不具合がないこと、将来も使い続けられることなどを、作者は保証しません。</p>
+        <h4>第2条（自己責任での利用）</h4>
+        <p>本ソフトの利用は、すべて利用者ご自身の責任で行ってください。本ソフトを使ったこと、または使えなかったことで生じたトラブル・損害について、作者は責任を負いません。</p>
+        <h4>第3条（データについて）</h4>
+        <p>本ソフトの不具合、パソコンの故障、アップデート、操作ミスなどで、登録したデータ（シナリオ一覧、本文、メモ、画像、カレンダー、TODOなど）が、消えたり壊れたりすることがあります。大切なデータは、利用者ご自身で、定期的にバックアップを取ってください。データの消失・破損による損害について、作者は責任を負いません。</p>
+        <h4>第4条（取り込む文章・画像について）</h4>
+        <p>本ソフトに取り込む、PDF・Word・HTML・テキスト・画像などの権利は、それぞれの権利者にあります。他人の作品を取り込むときは、その作品の利用規約・ガイドラインを守ってください。取り込み、書き出し、共有、配布などで、権利者や第三者との間にトラブルが生じても、作者は責任を負いません。</p>
+        <h4>第5条（取り込み・書き出しの結果について）</h4>
+        <p>文章の取り込み（見出しやルビの自動判定など）や、外部サービス用のデータの書き出しの結果は、正確さを保証しません。結果は、利用者ご自身で確認してください。</p>
+        <h4>第6条（外部サービスについて）</h4>
+        <p>本ソフトは、外部のサービス（オンラインで遊ぶためのツール、カレンダーのサイト、動画サイト、販売サイトなど）と、連携や案内を行うことがあります。これらは、作者とは関係のない第三者のサービスです。外部サービスの仕様の変更、停止、そちらで起きたトラブルについて、作者は責任を負いません。</p>
+        <h4>第7条（禁止事項）</h4>
+        <p>次のことはしないでください。</p>
+        <ol>
+          <li>本ソフトを、無断で、販売・転売・再配布すること</li>
+          <li>本ソフトを、改変して配布すること、または、作者が作ったものと偽ること</li>
+          <li>法律や、公序良俗に反する目的で利用すること</li>
+          <li>他人の権利を侵害する目的で利用すること</li>
+        </ol>
+        <h4>第8条（体験版について）</h4>
+        <p>体験版には、機能や登録できる件数に、制限があります。体験版のデータを、製品版に引き継げるとは限りません。</p>
+        <h4>第9条（提供の変更・終了）</h4>
+        <p>作者は、予告なく、本ソフトの内容を変更したり、提供や、サポートを終了したりすることがあります。これによって利用者に生じた損害について、作者は責任を負いません。</p>
+        <h4>第10条（規約の変更）</h4>
+        <p>作者は、必要に応じて、この規約を変更することがあります。変更後の規約は、本ソフトの配布ページなどに掲載した時点から、効力を持ちます。</p>
+        <h4>第11条（準拠法）</h4>
+        <p>この規約は、日本の法律に従います。</p>
+        <p class="date">制定：2026年11月1日</p>
+      </div>
+    </details>
     <p>© うちよそ研究所</p>
   </div>
 </footer>
